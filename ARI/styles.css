@@ -1,0 +1,19 @@
+.caja {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin-right: 100px;
+}
+
+.rojo {
+    background-color: #ff0000;
+}
+
+.verde {
+    background-color: #00ff00;
+}
+
+.azul {
+    background-color: #0000ff;
+}

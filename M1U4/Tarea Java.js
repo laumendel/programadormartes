@@ -48,28 +48,30 @@
 // }
 
 
-const distance = 1997
+const distance = 30000
 
-if (distance <= 1000) {
+if (distance < 1000) {
     document.write(`Vaya a pie.`)
 }
-else if (distance > 1000 && distance < 10000) {
+else if (distance >= 1000 && distance < 10000) {
     document.write(`Vaya en bicicleta.`)
 }
-else if (distance > 10000 && distance < 30000) {
+else if (distance >= 10000 && distance < 30000) {
     document.write(`Vaya en colectivo.`)
 }
-else if (distance > 30000 && distance < 100000) {
+else if (distance >= 30000 && distance < 100000) {
     document.write(`Vaya en auto.`)
 }
-else if (distance > 100000) {
+else if (distance >= 100000) {
     document.write(`Vaya en avion.`)
 }
 
-const numeros = [15, 300, 69, 458];  
+const numeros = [15, 300, 69, 458, 952];
 
-let max = numeros[0];
-for (let i = 1; i <numeros.length; i++) {
-    max = numeros[i];
+let max = 0;
+for (let i = 0; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+        max = numeros[i];
+    }
 }
 console.log(max);
